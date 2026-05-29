@@ -1,0 +1,51 @@
+/* Custom CSS styling for CampusNest */
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Card hover animation */
+.hover-card {
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Helper transition */
+.transition {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Text limits */
+.text-truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.text-truncate-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Custom styling for ranges */
+input[type="range"]::-webkit-slider-thumb {
+  background: #198754;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background: #198754;
+}
